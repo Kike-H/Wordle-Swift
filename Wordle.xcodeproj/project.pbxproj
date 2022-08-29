@@ -11,9 +11,6 @@
 		8AE5DEBB28BAB4020052404E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DEBA28BAB4020052404E /* ContentView.swift */; };
 		8AE5DEBD28BAB4040052404E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE5DEBC28BAB4040052404E /* Assets.xcassets */; };
 		8AE5DEC028BAB4040052404E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE5DEBF28BAB4040052404E /* Preview Assets.xcassets */; };
-		8AE5DECA28BAB4040052404E /* WordleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DEC928BAB4040052404E /* WordleTests.swift */; };
-		8AE5DED428BAB4040052404E /* WordleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DED328BAB4040052404E /* WordleUITests.swift */; };
-		8AE5DED628BAB4040052404E /* WordleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DED528BAB4040052404E /* WordleUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +37,7 @@
 		8AE5DEBC28BAB4040052404E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AE5DEBF28BAB4040052404E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8AE5DEC528BAB4040052404E /* WordleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AE5DEC928BAB4040052404E /* WordleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleTests.swift; sourceTree = "<group>"; };
 		8AE5DECF28BAB4040052404E /* WordleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AE5DED328BAB4040052404E /* WordleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleUITests.swift; sourceTree = "<group>"; };
-		8AE5DED528BAB4040052404E /* WordleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				8AE5DEB728BAB4020052404E /* Wordle */,
-				8AE5DEC828BAB4040052404E /* WordleTests */,
-				8AE5DED228BAB4040052404E /* WordleUITests */,
 				8AE5DEB628BAB4020052404E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,23 +100,6 @@
 				8AE5DEBF28BAB4040052404E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		8AE5DEC828BAB4040052404E /* WordleTests */ = {
-			isa = PBXGroup;
-			children = (
-				8AE5DEC928BAB4040052404E /* WordleTests.swift */,
-			);
-			path = WordleTests;
-			sourceTree = "<group>";
-		};
-		8AE5DED228BAB4040052404E /* WordleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8AE5DED328BAB4040052404E /* WordleUITests.swift */,
-				8AE5DED528BAB4040052404E /* WordleUITestsLaunchTests.swift */,
-			);
-			path = WordleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AE5DECA28BAB4040052404E /* WordleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +248,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AE5DED428BAB4040052404E /* WordleUITests.swift in Sources */,
-				8AE5DED628BAB4040052404E /* WordleUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
