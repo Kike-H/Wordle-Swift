@@ -37,15 +37,16 @@ struct CubeColor: View, Cube {
     var size: CGFloat = 60
     let sizeLetter = CGFloat(25)
     
-// Variable
+// Variables
     var color: Color
+    var letter: String
     
     var body: some View {
         RoundedRectangle(cornerRadius: cornerRadius)
             .frame(width: size, height: size)
             .foregroundColor(color)
             .overlay(
-                Text("H")
+                Text(letter)
                     .font(.system(size: sizeLetter, weight: .bold))
                     .foregroundColor(Color.white)
             )
@@ -55,6 +56,6 @@ struct CubeColor: View, Cube {
 struct Cube_Previews: PreviewProvider {
     static var previews: some View {
         CubeBlank()
-        CubeColor(color: Color.green)
+        CubeColor(color: Color.green, letter: "K")
     }
 }
