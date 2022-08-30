@@ -14,7 +14,9 @@ enum Status {
     case apear
 }
 
-struct CubeModel: Hashable {
+struct CubeModel: Hashable, Identifiable {
+    let id: String
+    
     let letter: String
     var status: Status
     
@@ -32,6 +34,7 @@ struct CubeModel: Hashable {
     }
     
     init(_letter: String) {
+        self.id = UUID().uuidString
         self.letter = _letter
         self.status = .normal
     }
