@@ -15,7 +15,7 @@ enum Status {
 }
 
 struct CubeModel: Hashable, Identifiable {
-    let id: String
+    let id: String = UUID().uuidString
     
     let letter: String
     var status: Status
@@ -34,7 +34,6 @@ struct CubeModel: Hashable, Identifiable {
     }
     
     init(_letter: String) {
-        self.id = UUID().uuidString
         self.letter = _letter
         self.status = .normal
     }
