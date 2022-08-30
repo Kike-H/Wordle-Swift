@@ -25,6 +25,9 @@ struct Board: View {
                     if(cube.status == .normal) {
                         CubeBlank()
                     }
+                    else {
+                        CubeColor(color: cube.color, letter: cube.letter)
+                    }
                 }
             }
         }
