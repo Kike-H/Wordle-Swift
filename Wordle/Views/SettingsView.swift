@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @EnvironmentObject var csManager: ColorSchemeManager
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Picker("", selection: $csManager.colorScheme) {
+                    Text("Light").tag(ColorScheme.light)
+                    Text("Dark").tag(ColorScheme.dark)
+                    Text("System").tag(ColorScheme.unspecified)
+                }
+                .pickerStyle(.wheel)
+                .navigationTitle(Text("Settings"))
+            }
+        }
     }
 }
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        SettingsView().environmentObject(ColorSchemeManager())
     }
 }

@@ -17,7 +17,7 @@ struct MainView: View {
             .navigationTitle(Text("Wordle"))
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: SettingsView()) {
+                    NavigationLink(destination: SettingsView().environmentObject(ColorSchemeManager())) {
                         Label("", systemImage: "gear.circle")
                             .font(.system(size: 25))
                     }
