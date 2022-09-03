@@ -12,15 +12,13 @@ struct Keyboard: View {
     var body: some View {
         LazyVGrid(columns: columns, spacing: 12) {
             ForEach(keyboardData, id: \.self) {k in
-                RoundedRectangle(cornerRadius: 8)
-                    .foregroundColor(.gray)
-                    .frame(width: 34, height: 50)
+                AnyView(k.status == .normal ? AnyView(KeyBlank()) : AnyView(KeyColor(color: k.color)))
                     .overlay {
                         Button {
                             debugPrint("adding a letter")
                         } label: {
                             Text(k.letter)
-                                .foregroundColor(.black)
+                                .foregroundColor(Color(uiColor: UIColor(named: "colorSecondary")!))
                                 .font(.system(size: 20, weight: .bold))
                         }
                     }
