@@ -10,7 +10,7 @@ import Foundation
 final class Game: ObservableObject {
     
     var numRow = 0
-    var message = "Presiona 🚀 para una nueva palabra"
+    var message = "\nPush 🚀 for a new word"
     private let emptyBoard: [[CubeModel]]  = Array(repeating: (0...4).map { .init(_letter: "\($0)") } , count: 6)
     
     @Published var answer: [String] = Array("ZORRO").map {String($0)}
@@ -28,7 +28,7 @@ final class Game: ObservableObject {
             word = []
             numRow = 0
             board = emptyBoard
-            message = "Presiona 🚀 para una nueva palabra"
+            message = "\nPush 🚀 for a new word"
             return
         }
         
@@ -43,17 +43,18 @@ final class Game: ObservableObject {
         
         if (word.count == 5) {
 //            Check if exits winner
+            message = "\nPush 🚀 for a new word"
             if(!isWinner() && numRow < 5) {
                 word = []
                 numRow += 1
                 isMessage = false
             }
             else if (isWinner()) {
-                message = "Ganaste. " + message
+                message = "You win 🎉. " + message
                 isMessage = true
             }
             else {
-                message = "Perdiste. La respuesta era \(self.answer.joined()) " + message
+                message = "You loose 🫤. The answer was \(self.answer.joined()) " + message
                 isMessage = true
             }
             
