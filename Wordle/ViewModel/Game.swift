@@ -63,13 +63,11 @@ final class Game: ObservableObject {
     
     private func getNewSatus() -> Status {
         var status: Status = .dontAppear
-        for(index, _) in word.enumerated() {
-            let currentLetter = word[index]
-            if(answer.contains(where: { $0 == currentLetter})) {
-                status = .apear
-                if(currentLetter == answer[index]) {
-                    status = .match
-                }
+        let currentLetter = word[word.count-1]
+        if(answer.contains(where: { $0 ==  currentLetter})) {
+            status = .appear
+            if (currentLetter == answer[word.count-1]) {
+                status = .match
             }
         }
         return status

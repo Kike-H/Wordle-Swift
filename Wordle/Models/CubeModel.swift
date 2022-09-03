@@ -11,7 +11,7 @@ enum Status {
     case normal
     case match
     case dontAppear
-    case apear
+    case appear
 }
 
 struct CubeModel: Hashable, Identifiable {
@@ -28,7 +28,7 @@ struct CubeModel: Hashable, Identifiable {
             return Color.green
         case .dontAppear:
             return Color.gray
-        case .apear:
+        case .appear:
             return Color.yellow
         }
     }
