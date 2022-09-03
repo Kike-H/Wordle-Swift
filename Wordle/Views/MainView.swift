@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var game = Game()
     var body: some View {
         NavigationView {
             VStack(spacing: 40) {
-                Board()
-                Keyboard()
+                Board(game: game)
+                Keyboard(game: game)
+            }
+            .alert(game.message, isPresented: $game.isMessage){
+                VStack {
+                    Button("OK", role: .cancel) {}
+                }
             }
             .navigationTitle(Text("Wordle"))
             .toolbar {

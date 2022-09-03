@@ -33,9 +33,9 @@ struct CubeModel: Hashable, Identifiable {
         }
     }
     
-    init(_letter: String) {
+    init(_letter: String, _status: Status = .normal) {
         self.letter = _letter
-        self.status = .normal
+        self.status = _status
     }
 }
 
