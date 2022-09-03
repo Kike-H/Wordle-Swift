@@ -9,7 +9,6 @@ import SwiftUI
 
 protocol Cube {
     
-    var lineWidth: CGFloat { get set }
     var cornerRadius: CGFloat { get set }
     var size: CGFloat { get set }
     
@@ -32,7 +31,6 @@ struct CubeBlank: View, Cube {
 struct CubeColor: View, Cube {
     
 //  Constants
-    var lineWidth: CGFloat = 4
     var cornerRadius: CGFloat = 8
     var size: CGFloat = 60
     let sizeLetter = CGFloat(25)
