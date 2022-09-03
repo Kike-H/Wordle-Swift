@@ -23,7 +23,7 @@ final class Game: ObservableObject {
     }
     
     func addLetter(cube: CubeModel) {
-        if(cube.letter == "🚀") {
+        if (cube.letter == "🚀") {
             isMessage = false
             word = []
             numRow = 0
@@ -32,7 +32,7 @@ final class Game: ObservableObject {
             return
         }
         
-        if(word.count < 5) {
+        if (word.count < 5) {
             
             word.append(cube.letter)
             let status = getNewSatus()
@@ -48,7 +48,7 @@ final class Game: ObservableObject {
                 numRow += 1
                 isMessage = false
             }
-            if (isWinner()) {
+            else if (isWinner()) {
                 message = "Ganaste. " + message
                 isMessage = true
             }
@@ -76,13 +76,7 @@ final class Game: ObservableObject {
     }
     
     private func isWinner() -> Bool {
-        let s1 = board[numRow][0].status
-        let s2 = board[numRow][1].status
-        let s3 = board[numRow][2].status
-        let s4 = board[numRow][3].status
-        let s5 = board[numRow][4].status
-        let flag = s1 == .match && s2 == .match && s3 == .match && s4 == .match && s5 == .match ? true : false
-        return flag
+        return answer.joined() == word.joined() ? true : false
     }
     
 }
