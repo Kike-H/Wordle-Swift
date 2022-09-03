@@ -54,7 +54,7 @@ final class Game: ObservableObject {
                 isMessage = true
             }
             else {
-                message = "You loose 🫤. The answer was \(self.answer.joined()) " + message
+                message = "You loose 🫤. \nThe answer was \(self.answer.joined()) " + message
                 isMessage = true
             }
             
