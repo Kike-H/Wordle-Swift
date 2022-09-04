@@ -21,6 +21,7 @@ final class Game: ObservableObject {
     
     init() {
         self.board = emptyBoard
+        getRandomWord()
     }
     
     func addLetter(cube: CubeModel) {
@@ -31,6 +32,7 @@ final class Game: ObservableObject {
             board = emptyBoard
             keyboard = keyboardData
             message = "\nPush 🚀 for a new word"
+            getRandomWord()
             return
         }
         
@@ -64,6 +66,21 @@ final class Game: ObservableObject {
             
         }
         
+    }
+    
+    private func getRandomWord() {
+        WordStore.shared.fetchRandomWords() { result in
+            switch result {
+            case .success(let words):
+                self.answer = Array(words[0].uppercased().applyingTransform(.stripDiacritics, reverse: false)!).map { String($0)}
+                if(self.answer.count < 5) {
+                    self.getRandomWord()
+                }
+                debugPrint(self.answer)
+            case .failure(let error):
+                debugPrint(error)
+            }
+        }
     }
     
     private func getNewSatus() -> Status {
