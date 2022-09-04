@@ -12,7 +12,7 @@ struct Keyboard: View {
     let columns: [GridItem] = Array(repeating: GridItem(.flexible(minimum: 20), spacing: 0), count: 10)
     var body: some View {
         LazyVGrid(columns: columns, spacing: 12) {
-            ForEach(keyboardData, id: \.self) { k in
+            ForEach(game.keyboard, id: \.self) { k in
                 AnyView(k.status == .normal ? AnyView(KeyBlank()) : AnyView(KeyColor(color: k.color)))
                     .overlay {
                         Button {

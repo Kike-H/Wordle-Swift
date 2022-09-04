@@ -16,6 +16,7 @@ final class Game: ObservableObject {
     @Published var answer: [String] = Array("ZORRO").map {String($0)}
     @Published var word: [String] = []
     @Published var board: [[CubeModel]]
+    @Published var keyboard: [CubeModel] = keyboardData
     @Published var isMessage: Bool = false
     
     init() {
@@ -36,7 +37,7 @@ final class Game: ObservableObject {
             
             word.append(cube.letter)
             let status = getNewSatus()
-            
+            keyboard[keyboard.firstIndex(of: cube)!] = CubeModel(_letter: cube.letter, _status: status)
             board[numRow][word.count-1] = CubeModel(_letter: cube.letter, _status: status)
             
         }

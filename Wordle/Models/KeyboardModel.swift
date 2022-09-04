@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let keys = Array("QWERTYUIOPASDFGHJKLÑ 🚀ZXCVBNM ")
+let keys = Array("QWERTYUIOP ASDFGHJKL 🚀ZXCVBNM ")
 var keyboardData: [CubeModel] = keys.map { .init(_letter: String($0)) }
 
 
