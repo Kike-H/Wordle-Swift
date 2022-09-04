@@ -29,16 +29,19 @@ final class Game: ObservableObject {
             word = []
             numRow = 0
             board = emptyBoard
+            keyboard = keyboardData
             message = "\nPush 🚀 for a new word"
             return
         }
         
         if (word.count < 5) {
             
-            word.append(cube.letter)
-            let status = getNewSatus()
-            keyboard[keyboard.firstIndex(of: cube)!] = CubeModel(_letter: cube.letter, _status: status)
-            board[numRow][word.count-1] = CubeModel(_letter: cube.letter, _status: status)
+            if (cube.letter != " ") {
+                word.append(cube.letter)
+                let status = getNewSatus()
+                keyboard[keyboard.firstIndex(of: cube)!] = CubeModel(_letter: cube.letter, _status: status)
+                board[numRow][word.count-1] = CubeModel(_letter: cube.letter, _status: status)
+            }
             
         }
         
