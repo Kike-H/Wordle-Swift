@@ -23,10 +23,7 @@ pod install
 ## Images
 <p float="left">
 
-<img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmSBwGjsDSD2AkCNGWH_fad7jUPNNGuacoqc030UWqfPamZpL4f5Cyasm7Hx5SCFp2wZM0grkWc=w2880-h1592" alt="img1" width="250" style =/> 
-
-<img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmTmejGLBzCEXsUReXEhgs9duiqSUOFuLqPgD6OdJm0nf1QQW-Yz7FtaF3HfLpf5fGwXT16QCLk=w2880-h1592" alt="img2" width="250"/>
-
+<img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmSBwGjsDSD2AkCNGWH_fad7jUPNNGuacoqc030UWqfPamZpL4f5Cyasm7Hx5SCFp2wZM0grkWc=w2880-h1592" alt="img1" width="250" style =/> <img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmTmejGLBzCEXsUReXEhgs9duiqSUOFuLqPgD6OdJm0nf1QQW-Yz7FtaF3HfLpf5fGwXT16QCLk=w2880-h1592" alt="img2" width="250"/>
 </p>
 
 
