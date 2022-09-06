@@ -32,7 +32,9 @@ open Wordle.xcodeproj
 <img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmSBwGjsDSD2AkCNGWH_fad7jUPNNGuacoqc030UWqfPamZpL4f5Cyasm7Hx5SCFp2wZM0grkWc=w2880-h1592" alt="img1" width="250" style =/> 
 <img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmTmejGLBzCEXsUReXEhgs9duiqSUOFuLqPgD6OdJm0nf1QQW-Yz7FtaF3HfLpf5fGwXT16QCLk=w2880-h1592" alt="img2" width="250"/>
 <img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmSS43A2506um74fJLBS9sJqM9O1DWWcirU7BgRQzpgam5Ri1_2aO6PhEpvb_CZM-oZW5aOeRK0=w2880-h1592" alt="img3" width="250"/>
-<img src="http://drive.google.com/uc?export=view&id=1D0YcLbBHceh-HSmcSkrSmsNn0lPttv7D" alt="gif" width="250"/>
+<img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmQ-Kk-fMaXpTDdZsFs2WyM7DN_Ju0aVfT7JdsH7wStjfPCmmSr6F668rIFrs-8FyXfh1w0RkIE=w2880-h1592" alt="img3" width="250"/>
+<img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmQyVcpvpqoL-QSWLjcPcHH8217r1mF8oi5TPF3JgJEzJJa3Qe7jowx8PGfnAh0P0KTGu6GqlwI=w2880-h1592" alt="img3" width="250"/>
+<img src="https://lh3.googleusercontent.com/drive-viewer/AJc5JmQjefGrOpZIaWLhRk20w8LU5keeDjF6O0iQ-FsxDLTd77fosF2SRmDoK5X4TsmhpeYh8ufLoKs=w2880-h1592" alt="img3" width="250"/>
 </p>
 
 
