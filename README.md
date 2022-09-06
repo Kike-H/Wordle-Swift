@@ -20,6 +20,12 @@ sudo gem install cocoapods
 pod install 
 ```
 
+2. Open Wordle.xcodeproj
+
+```bash
+open Wordle.xcodeproj
+```
+
 ## Images
 <p float="left">
 
